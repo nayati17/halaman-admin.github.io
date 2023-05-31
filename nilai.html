@@ -1,0 +1,781 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Link CSS Lokal -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>Halaman Admin</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-warning fixed-top">
+        <a class="navbar-brand" href="#"><b>WELCOME ADMIN | Seoul University</b></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <form class="form-inline my-2 my-lg-0 ml-auto">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+            </form>
+
+            <div class="ikon ml-5">
+                <h5>
+                    <i class="fa-solid fa-envelope mr-3 mt-2" data-toggle="tooltip" title="Pesan Masuk"></i>
+                    <i class="fa-solid fa-bell mr-3 mt-2" data-toggle="tooltip" title="Notifikasi"></i>
+                    <i class="fa-solid fa-right-from-bracket mr-3 mt-2" data-toggle="tooltip" title="Sign Out"></i>
+                </h5>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div class="row mt-5">
+            <div class="col-lg-2 col-md-2 col-sm-2 col-2 bg-dark p-4">
+                <div>
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                          <a class="nav-link text-white" href="index.html" data-toggle="tooltip" data-placement="bottom" title="Dashboard"><i class="fa-sharp fa-solid fa-gauge mr-2"></i>Dashboard</a>
+                          <hr class="bg-light">
+                        </li>
+                        <li class="nav-item mb-2">
+                          <a class="nav-link text-white" href="mahasiswa.html" data-toggle="tooltip" data-placement="bottom" title="Data Mahasiswa"><i class="fa-solid fa-user-graduate mr-2"></i>Data Mahasiswa</a>
+                          <hr class="bg-light">
+                        </li>
+                        <li class="nav-item mb-2">
+                          <a class="nav-link text-white" href="dosen.html" data-toggle="tooltip" data-placement="bottom" title="Data Dosen"><i class="fa-sharp fa-solid fa-chalkboard-user mr-2"></i>Data Dosen</a>
+                          <hr class="bg-light">
+                        </li>
+                        <li class="nav-item mb-2">
+                          <a class="nav-link text-white" href="pegawai.html" data-toggle="tooltip" data-placement="bottom" title="Data Pegawai"><i class="fa-solid fa-users mr-2"></i>Data Pegawai</a>
+                          <hr class="bg-light">
+                        </li>
+                        <li class="nav-item mb-2">
+                          <a class="nav-link text-white" href="jadwal.html" data-toggle="tooltip" data-placement="bottom" title="Jadwal Kuliah"><i class="fa-solid fa-calendar-days mr-2"></i>Jadwal Kuliah</a>
+                          <hr class="bg-light">
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link text-white" href="nilai.html" data-toggle="tooltip" data-placement="bottom" title="Nilai Mahasiswa"><i class="fa-solid fa-book-open-reader mr-2"></i>Nilai Mahasiswa</a>
+                          <hr class="bg-light">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-10 col-md-10 col-sm-10 col-10 mt-4 p-4">
+                <h3>
+                    <p><i class="fa-solid fa-book-open-reader mr-3"></i>NILAI MAHASISWA</p>
+                    <hr>
+                </h3>
+                <div class="accordion" id="accordionExample">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Graduate School of Public Health
+                                </button>
+                            </h2>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div id="collapseOne" class="collapse hide" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="img/gfriend/sowon.jpeg" class="card-img-top" alt="sowon">
+                                            <div class="card-body">
+                                                <!-- Button trigger modal -->
+                                                <button type="button" class="btn btn-primary m-auto" data-toggle="modal" data-target="#sowonModal" style="display: block;">
+                                                    Kim Sojung
+                                                </button>
+                                                <!-- Modal -->
+                                                <div class="modal fade" id="sowonModal" tabindex="-1" aria-labelledby="sowonModalLabel" aria-hidden="true">
+                                                    <div class="modal-dialog">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <h5 class="modal-title" id="sowonModalLabel">KIM SOJUNG</h5>
+                                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                    <span aria-hidden="true">&times;</span>
+                                                                </button>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                <div class="container">
+                                                                    <div class="row">
+                                                                        <div class="col-lg-8">
+                                                                            <img src="img/gfriend/sowon.jpeg" class="card-img-top" alt="sowon">
+                                                                        </div>
+                                                                        <div class="col-lg-4" style="margin-top: 25%;">
+                                                                            <table class="table table-bordered">
+                                                                                <tr>
+                                                                                    <th scope="col">Tugas</th>
+                                                                                    <td>80</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th scope="col">Middle</th>
+                                                                                    <td>86</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th scope="col">Final</th>
+                                                                                    <td>90</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th scope="col">Rata-rata</th>
+                                                                                    <td>85,33</td>
+                                                                                </tr>
+                                                                            </table>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div id="collapseOne" class="collapse hide" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="img/gfriend/yerin.jpeg" class="card-img-top" alt="yerin">
+                                            <div class="card-body">
+                                                <!-- Button trigger modal -->
+                                                <button type="button" class="btn btn-primary m-auto" data-toggle="modal" data-target="#yerinModal" style="display:block;">
+                                                    Jung Yerin
+                                                </button>
+                                                <!-- Modal -->
+                                                <div class="modal fade" id="yerinModal" tabindex="-1" aria-labelledby="yerinModalLabel" aria-hidden="true">
+                                                    <div class="modal-dialog">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <h5 class="modal-title" id="yerinModalLabel">JUNG YERIN</h5>
+                                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                    <span aria-hidden="true">&times;</span>
+                                                                </button>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                <div class="container">
+                                                                    <div class="row">
+                                                                        <div class="col-lg-8">
+                                                                            <img src="img/gfriend/yerin.jpeg" class="card-img-top" alt="yerin">
+                                                                        </div>
+                                                                        <div class="col-lg-4" style="margin-top: 25%;">
+                                                                            <table class="table table-bordered">
+                                                                                <tr>
+                                                                                    <th scope="col">Tugas</th>
+                                                                                    <td>82</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th scope="col">Middle</th>
+                                                                                    <td>85</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th scope="col">Final</th>
+                                                                                    <td>89</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th scope="col">Rata-rata</th>
+                                                                                    <td>85,33</td>
+                                                                                </tr>
+                                                                            </table>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div id="collapseOne" class="collapse hide" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="img/gfriend/eunha.jpeg" class="card-img-top" alt="eunha">
+                                            <div class="card-body">
+                                                <!-- Button trigger modal -->
+                                                <button type="button" class="btn btn-primary m-auto" data-toggle="modal" data-target="#eunhaModal" style="display: block;">
+                                                    Jung Eunbi
+                                                </button>
+                                                <!-- Modal -->
+                                                <div class="modal fade" id="eunhaModal" tabindex="-1" aria-labelledby="eunhaModalLabel" aria-hidden="true">
+                                                    <div class="modal-dialog">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <h5 class="modal-title" id="eunhaModalLabel">JUNG EUNBI</h5>
+                                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                    <span aria-hidden="true">&times;</span>
+                                                                </button>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                <div class="container">
+                                                                    <div class="row">
+                                                                        <div class="col-lg-8">
+                                                                            <img src="img/gfriend/eunha.jpeg" class="card-img-top" alt="eunha">
+                                                                        </div>
+                                                                        <div class="col-lg-4" style="margin-top: 25%;">
+                                                                            <table class="table table-bordered">
+                                                                                <tr>
+                                                                                    <th scope="col">Tugas</th>
+                                                                                    <td>81</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th scope="col">Middle</th>
+                                                                                    <td>87</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th scope="col">Final</th>
+                                                                                    <td>90</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th scope="col">Rata-rata</th>
+                                                                                    <td>86</td>
+                                                                                </tr>
+                                                                            </table>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div id="collapseOne" class="collapse hide" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="img/gfriend/yuju.jpeg" class="card-img-top" alt="yuju">
+                                            <div class="card-body">
+                                                <!-- Button trigger modal -->
+                                                <button type="button" class="btn btn-primary m-auto" data-toggle="modal" data-target="#yujuModal" style="display: block;">
+                                                    Choi Yuna
+                                                </button>
+                                                <!-- Modal -->
+                                                <div class="modal fade" id="yujuModal" tabindex="-1" aria-labelledby="yujuModalLabel" aria-hidden="true">
+                                                    <div class="modal-dialog">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <h5 class="modal-title" id="yujuModalLabel">CHOI YUNA</h5>
+                                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                    <span aria-hidden="true">&times;</span>
+                                                                </button>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                <div class="container">
+                                                                    <div class="row">
+                                                                        <div class="col-lg-8">
+                                                                            <img src="img/gfriend/yuju.jpeg" class="card-img-top" alt="yuju">
+                                                                        </div>
+                                                                        <div class="col-lg-4" style="margin-top: 25%;">
+                                                                            <table class="table table-bordered">
+                                                                                <tr>
+                                                                                    <th scope="col">Tugas</th>
+                                                                                    <td>84</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th scope="col">Middle</th>
+                                                                                    <td>87</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th scope="col">Final</th>
+                                                                                    <td>91</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th scope="col">Rata-rata</th>
+                                                                                    <td>87,33</td>
+                                                                                </tr>
+                                                                            </table>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div id="collapseOne" class="collapse hide" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="img/gfriend/sinb.jpeg" class="card-img-top" alt="sinb">
+                                            <div class="card-body">
+                                                <!-- Button trigger modal -->
+                                                <button type="button" class="btn btn-primary m-auto" data-toggle="modal" data-target="#sinbModal" style="display:block;">
+                                                    Hwang Eunbi
+                                                </button>
+                                                <!-- Modal -->
+                                                <div class="modal fade" id="sinbModal" tabindex="-1" aria-labelledby="sinbModalLabel" aria-hidden="true">
+                                                    <div class="modal-dialog">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <h5 class="modal-title" id="sinbModalLabel">HWANG EUNBI</h5>
+                                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                    <span aria-hidden="true">&times;</span>
+                                                                </button>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                <div class="container">
+                                                                    <div class="row">
+                                                                        <div class="col-lg-8">
+                                                                            <img src="img/gfriend/sinb.jpeg" class="card-img-top" alt="sinb">
+                                                                        </div>
+                                                                        <div class="col-lg-4" style="margin-top: 25%;">
+                                                                            <table class="table table-bordered">
+                                                                                <tr>
+                                                                                    <th scope="col">Tugas</th>
+                                                                                    <td>83</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th scope="col">Middle</th>
+                                                                                    <td>87</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th scope="col">Final</th>
+                                                                                    <td>92</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th scope="col">Rata-rata</th>
+                                                                                    <td>87,33</td>
+                                                                                </tr>
+                                                                            </table>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div id="collapseOne" class="collapse hide" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="img/gfriend/umji.jpeg" class="card-img-top" alt="umji">
+                                            <div class="card-body">
+                                                <!-- Button trigger modal -->
+                                                <button type="button" class="btn btn-primary m-auto" data-toggle="modal" data-target="#umjiModal" style="display: block;">
+                                                    Kim Yewon
+                                                </button>
+                                                <!-- Modal -->
+                                                <div class="modal fade" id="umjiModal" tabindex="-1" aria-labelledby="umjiModalLabel" aria-hidden="true">
+                                                    <div class="modal-dialog">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <h5 class="modal-title" id="umjiModalLabel">KIM YEWON</h5>
+                                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                    <span aria-hidden="true">&times;</span>
+                                                                </button>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                <div class="container">
+                                                                    <div class="row">
+                                                                        <div class="col-lg-8">
+                                                                            <img src="img/gfriend/umji.jpeg" class="card-img-top" alt="umji">
+                                                                        </div>
+                                                                        <div class="col-lg-4" style="margin-top: 25%;">
+                                                                            <table class="table table-bordered">
+                                                                                <tr>
+                                                                                    <th scope="col">Tugas</th>
+                                                                                    <td>84</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th scope="col">Middle</th>
+                                                                                    <td>89</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th scope="col">Final</th>
+                                                                                    <td>94</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th scope="col">Rata-rata</th>
+                                                                                    <td>89</td>
+                                                                                </tr>
+                                                                            </table>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion" id="accordionExample">
+                    <div class="card">
+                        <div class="card-header" id="headingTwo">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                    School of Law   
+                                </button>
+                            </h2>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div id="collapseTwo" class="collapse hide" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="img/txt/soobin.jpg" class="card-img-top" alt="soobin">
+                                            <div class="card-body">
+                                                <!-- Button trigger modal -->
+                                                <button type="button" class="btn btn-primary m-auto" data-toggle="modal" data-target="#soobinModal" style="display: block;">
+                                                    Choi Soobin
+                                                </button>
+                                                <!-- Modal -->
+                                                <div class="modal fade" id="soobinModal" tabindex="-1" aria-labelledby="soobinModalLabel" aria-hidden="true">
+                                                    <div class="modal-dialog">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <h5 class="modal-title" id="soobinModalLabel">CHOI SOOBIN</h5>
+                                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                    <span aria-hidden="true">&times;</span>
+                                                                </button>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                <div class="container">
+                                                                    <div class="row">
+                                                                        <div class="col-lg-8">
+                                                                            <img src="img/txt/soobin.jpg" class="card-img-top" alt="soobin">
+                                                                        </div>
+                                                                        <div class="col-lg-4" style="margin-top: 25%;">
+                                                                            <table class="table table-bordered">
+                                                                                <tr>
+                                                                                    <th scope="col">Tugas</th>
+                                                                                    <td>81</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th scope="col">Middle</th>
+                                                                                    <td>85</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th scope="col">Final</th>
+                                                                                    <td>91</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th scope="col">Rata-rata</th>
+                                                                                    <td>85,67</td>
+                                                                                </tr>
+                                                                            </table>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div id="collapseTwo" class="collapse hide" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="img/txt/yeonjun.jpg" class="card-img-top" alt="yeonjun">
+                                            <div class="card-body">
+                                                <!-- Button trigger modal -->
+                                                <button type="button" class="btn btn-primary m-auto" data-toggle="modal" data-target="#yeonjunModal" style="display:block;">
+                                                    Choi Yeonjun
+                                                </button>
+                                                <!-- Modal -->
+                                                <div class="modal fade" id="yeonjunModal" tabindex="-1" aria-labelledby="yeonjunModalLabel" aria-hidden="true">
+                                                    <div class="modal-dialog">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <h5 class="modal-title" id="yeonjunModalLabel">CHOI YEONJUN</h5>
+                                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                    <span aria-hidden="true">&times;</span>
+                                                                </button>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                <div class="container">
+                                                                    <div class="row">
+                                                                        <div class="col-lg-8">
+                                                                            <img src="img/txt/yeonjun.jpg" class="card-img-top" alt="yeonjun">
+                                                                        </div>
+                                                                        <div class="col-lg-4" style="margin-top: 25%;">
+                                                                            <table class="table table-bordered">
+                                                                                <tr>
+                                                                                    <th scope="col">Tugas</th>
+                                                                                    <td>80</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th scope="col">Middle</th>
+                                                                                    <td>84</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th scope="col">Final</th>
+                                                                                    <td>91</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th scope="col">Rata-rata</th>
+                                                                                    <td>85</td>
+                                                                                </tr>
+                                                                            </table>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div id="collapseTwo" class="collapse hide" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="img/txt/beomgyu.jpg" class="card-img-top" alt="beomgyu">
+                                            <div class="card-body">
+                                                <!-- Button trigger modal -->
+                                                <button type="button" class="btn btn-primary m-auto" data-toggle="modal" data-target="#beomgyuModal" style="display: block;">
+                                                    Choi Beomgyu
+                                                </button>
+                                                <!-- Modal -->
+                                                <div class="modal fade" id="beomgyuModal" tabindex="-1" aria-labelledby="beomgyuModalLabel" aria-hidden="true">
+                                                    <div class="modal-dialog">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <h5 class="modal-title" id="beomgyuModalLabel">CHOI BEOMGYU</h5>
+                                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                    <span aria-hidden="true">&times;</span>
+                                                                </button>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                <div class="container">
+                                                                    <div class="row">
+                                                                        <div class="col-lg-8">
+                                                                            <img src="img/txt/beomgyu.jpg" class="card-img-top" alt="beomgyu">
+                                                                        </div>
+                                                                        <div class="col-lg-4" style="margin-top: 25%;">
+                                                                            <table class="table table-bordered">
+                                                                                <tr>
+                                                                                    <th scope="col">Tugas</th>
+                                                                                    <td>80</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th scope="col">Middle</th>
+                                                                                    <td>88</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th scope="col">Final</th>
+                                                                                    <td>90</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th scope="col">Rata-rata</th>
+                                                                                    <td>86</td>
+                                                                                </tr>
+                                                                            </table>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div id="collapseTwo" class="collapse hide" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="img/txt/taehyun.jpg" class="card-img-top" alt="taehyun">
+                                            <div class="card-body">
+                                                <!-- Button trigger modal -->
+                                                <button type="button" class="btn btn-primary m-auto" data-toggle="modal" data-target="#taehyunModal" style="display: block;">
+                                                    Kang Taehyun
+                                                </button>
+                                                <!-- Modal -->
+                                                <div class="modal fade" id="taehyunModal" tabindex="-1" aria-labelledby="taehyunModalLabel" aria-hidden="true">
+                                                    <div class="modal-dialog">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <h5 class="modal-title" id="taehyunModalLabel">KANG TAEHYUN</h5>
+                                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                    <span aria-hidden="true">&times;</span>
+                                                                </button>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                <div class="container">
+                                                                    <div class="row">
+                                                                        <div class="col-lg-8">
+                                                                            <img src="img/txt/taehyun.jpg" class="card-img-top" alt="taehyun">
+                                                                        </div>
+                                                                        <div class="col-lg-4" style="margin-top: 25%;">
+                                                                            <table class="table table-bordered">
+                                                                                <tr>
+                                                                                    <th scope="col">Tugas</th>
+                                                                                    <td>85</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th scope="col">Middle</th>
+                                                                                    <td>90</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th scope="col">Final</th>
+                                                                                    <td>93</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th scope="col">Rata-rata</th>
+                                                                                    <td>89,33</td>
+                                                                                </tr>
+                                                                            </table>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div id="collapseTwo" class="collapse hide" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        <div class="card" style="width: 18rem;">
+                                            <img src="img/txt/hueningkai.jpg" class="card-img-top" alt="hueningkai">
+                                            <div class="card-body">
+                                                <!-- Button trigger modal -->
+                                                <button type="button" class="btn btn-primary m-auto" data-toggle="modal" data-target="#hueningkaiModal" style="display:block;">
+                                                    Hueningkai
+                                                </button>
+                                                <!-- Modal -->
+                                                <div class="modal fade" id="hueningkaiModal" tabindex="-1" aria-labelledby="hueningkaiModalLabel" aria-hidden="true">
+                                                    <div class="modal-dialog">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <h5 class="modal-title" id="hueningkaiModalLabel">HUENINGKAI</h5>
+                                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                    <span aria-hidden="true">&times;</span>
+                                                                </button>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                <div class="container">
+                                                                    <div class="row">
+                                                                        <div class="col-lg-8">
+                                                                            <img src="img/txt/hueningkai.jpg" class="card-img-top" alt="hueningkai">
+                                                                        </div>
+                                                                        <div class="col-lg-4" style="margin-top: 25%;">
+                                                                            <table class="table table-bordered">
+                                                                                <tr>
+                                                                                    <th scope="col">Tugas</th>
+                                                                                    <td>84</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th scope="col">Middle</th>
+                                                                                    <td>89</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th scope="col">Final</th>
+                                                                                    <td>90</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <th scope="col">Rata-rata</th>
+                                                                                    <td>87,67</td>
+                                                                                </tr>
+                                                                            </table>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-secondary text-white">
+        <div class="container">
+            <div class="row p-4">
+                <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                    <h3>About Us</h3> <br>
+                    <p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum sed saepe pariatur laudantium deleniti cum.</p>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                    <h3>Sosial Media</h3> <br>
+                    <ul>
+                        <li><a href="https://www.youtube.com/channel/UCJ_3L5ElVq7fI0AAB91tfng" target="_blank" data-toggle="tooltip" data-placement="right" title="Youtube"><i class="fa-brands fa-youtube fa-2x mr-3"></i></a>Youtube</li> <br>
+                        <li><a href="https://www.facebook.com/SeoulNationalUniversity/" target="_blank" data-toggle="tooltip" data-placement="right" title="Facebook"><i class="fa-brands fa-facebook fa-2x mr-3"></i></a>Facebook</li> <br>
+                        <li><a href="https://www.instagram.com/snu.official/?igshid=1ja3dei440cnw" target="_blank" data-toggle="tooltip" data-placement="right" title="Instagram"><i class="fa-brands fa-instagram fa-2x mr-3"></i></a>Instagram</li> <br>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                    <h3>Map</h3> <br>
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3167.178222965524!2d126.94746357504255!3d37.45651373043063!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c9fe8a0a1e2a5%3A0xa1e2eebc04f0c5e7!2sSeoul%20National%20University!5e0!3m2!1sid!2sid!4v1685514662204!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+    -->
+
+    <script src="script.js"></script>
+  </body>
+</html>
